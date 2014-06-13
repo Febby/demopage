@@ -1,5 +1,6 @@
 // load external font from google
 @import url("//fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("//fonts.googleapis.com/css?family=Fugaz+One");
 
 //links
 
@@ -14,14 +15,16 @@ a {
 
 .content  {
 	h2{
-	font-weight: 700;
-	font-size: 4em;
+	font-family: 'Fugaz One', cursive;
+	// font-weight: 700;
+	font-size: 3em;
 	padding: 0 0 10px;
 	color: #333;
 	margin: 0 1% 40px;
 	text-align: center;
+	text-transform:uppercase;
 	box-shadow: 0 10px 0 rgba(0,0,0,0.02);
-	text-shadow: 0 0 5px #fff;
+	text-shadow: 0 0 5px #ecf0f1;
 	}
 }
 
