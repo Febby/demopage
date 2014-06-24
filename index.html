@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KMG World Tour 2014 - Registration</title>
     <meta name="description" content="KMG World Tour 2014 (Singapore) Registration Page" />
-    <meta name="keywords" content="KMG,World Tour,2014,Registration,Eyal,Eyal yanilov" />
+    <meta name="keywords" content="Krav maga,KMG,World Tour,2014,Registration,Eyal,Eyal yanilov" />
     <meta name="author" content="KMC Singapore" />
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
     <script src="js/modernizr.custom.79639.js"></script>
 </head>
 
@@ -82,7 +83,7 @@
                                         <li>90 Years (1924) since Imi began training boxing and wrestling.</li>
                                     </ul>
 
-                                   
+
 
                                 </div>
                             </div>
@@ -116,12 +117,25 @@
                             <!-- form start -->
                             <form class="cbp-mc-form">
 
-                               <!-- Notification start -->
-                               <!--  <div class="notification">
+                                <!-- Notification start -->
+                                <!--  <div class="notification">
                                     <p class="success">Success: Thank you! Your details has been submited.</p>
                                     <p class="error">Error: Sorry! Please check your details again.</p>
                                 </div> -->
                                 <!-- notification end -->
+                                 <div >
+                                    Time: 12pm to 4pm
+                                    <br />
+                                    Location : YWCA Fort Canning Lodge
+                                    6 Fort Canning Road
+                                    Singapore 179494
+                                    Banquet Room Level 2
+                                    <br />
+                                    Walk in rate $88.00
+                                    Early Bird : $68.00
+                                    <br />
+                                    Date: 12 July 2014
+                                </div>
 
                                 <div class="cbp-mc-column">
                                     <label for="first_name">Your Name</label>
@@ -131,7 +145,7 @@
                                     <label for="email">Email Address</label>
                                     <input type="text" id="email" name="email" placeholder="jon@doe.com" required>
                                     <label for="email">Birthdate</label>
-                                    <input type="text" id="birthdate" name="birthdate" placeholder="Enter Your Birthdate here" required>
+                                    <input type="text" id="datepicker" name="birthdate" placeholder="Enter Your Birthdate here" required>
 
                                 </div>
                                 <div class="cbp-mc-column">
@@ -176,6 +190,8 @@
     </div>
     <!-- /container -->
     <script src="js/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
     <script src="js/jquery.jscrollpane.min.js"></script>
     <script src="js/jquerypp.custom.js"></script>
@@ -185,6 +201,12 @@
     $(function() {
 
         Page.init();
+        $("#datepicker").datepicker({
+            changeMonth: true,
+            changeYear: true,
+            dateFormat: "yy-mm-dd",
+            yearRange: "1920:2006"
+        });
 
     });
     </script>
